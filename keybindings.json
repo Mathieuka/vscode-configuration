@@ -1,0 +1,93 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+       "key": "cmd+shift+m",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus",
+        "args": {
+          "snippet": "console.log(`${TM_SELECTED_TEXT}$1`)$2;"
+        }
+    },
+    // move word left/right
+    {
+        "key": "ctrl+shift+left",
+        "command": "editor.action.moveCarretLeftAction"
+    },
+    {
+        "key": "ctrl+shift+right",
+        "command": "editor.action.moveCarretRightAction"
+    },
+    // delete line terminal
+    {
+        "key": "alt+delete",
+        "command": "workbench.action.terminal.deleteWordRight",
+        "when": "terminalFocus"
+    },
+    // split terminal
+    {
+        "key": "shift+cmd+`",
+        "command": "workbench.action.terminal.split",
+        "when": "terminalFocus"
+    },
+    // terminal navigation
+    {
+        "key": "shift+cmd+[BracketLeft]",
+        "command": "workbench.action.terminal.focusNextPane",
+        "when": "terminalFocus"
+    },
+    // move to line end and line start terminal
+    {
+        "key": "cmd+right",
+        "command": "workbench.action.terminal.moveToLineEnd",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "cmd+left",
+        "command": "workbench.action.terminal.moveToLineStart",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "shift+cmd+[Quote]",
+        "command": "workbench.action.terminal.focus"
+    },
+    {
+        "key": "shift+cmd+[BracketRight]",
+        "command": "workbench.action.terminal.kill"
+    },
+    {
+        "key": "alt+cmd+right",
+        "command": "-workbench.action.terminal.focusNextPane",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "[Backquote] right",
+        "command": "workbench.action.splitEditorRight"
+    },
+    {
+        "key": "[Backquote] left",
+        "command": "workbench.action.splitEditorLeft"
+    },
+    // split editor
+    {
+        "key": "[Backquote] right",
+        "command": "workbench.action.splitEditorRight"
+    },
+    {
+        "key": "[Backquote] left",
+        "command": "workbench.action.splitEditorLeft"
+    },
+    {
+        "key": "[Backquote] down",
+        "command": "workbench.action.splitEditorDown"
+    },
+    {
+        "key": "[Backquote] up",
+        "command": "workbench.action.splitEditorUp"
+    },
+    {
+        "key": "[Backquote] shift+right",
+        "command": "workbench.action.moveEditorToRightGroup"
+    },
+    
+    
+]
