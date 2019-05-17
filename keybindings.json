@@ -59,8 +59,6 @@
         "command": "-workbench.action.terminal.focusNextPane",
         "when": "terminalFocus"
     },
-    //split editor
-    //wip.....
     {
         "key": "1 up",
         "command": "workbench.action.zoomIn"
