@@ -59,6 +59,7 @@
         "command": "-workbench.action.terminal.focusNextPane",
         "when": "terminalFocus"
     },
+    // zoom editor vscode
     {
         "key": "1 up",
         "command": "workbench.action.zoomIn"
