@@ -8,6 +8,14 @@
           "snippet": "console.log(`${TM_SELECTED_TEXT}$1`)$2;"
         }
     },
+    { // debug snipet
+        "key": "cmd+shift+d",
+         "command": "editor.action.insertSnippet",
+         "when": "editorTextFocus",
+         "args": {
+           "snippet": "console.log(\"%cDEBUG => \",\"font-size:15px; color: #0015ff\",${TM_SELECTED_TEXT}$1)$2;"
+         }
+    },
     // move word left/right
     {
         "key": "ctrl+shift+left",
