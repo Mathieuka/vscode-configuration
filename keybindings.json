@@ -1,31 +1,21 @@
-// Place your key bindings in this file to override the defaults
-[
+// Place your key bindings in this file to override the defaults,
+[   
     {
-       "key": "cmd+shift+m",
-        "command": "editor.action.insertSnippet",
-        "when": "editorTextFocus",
-        "args": {
-          "snippet": "console.log(`${TM_SELECTED_TEXT}$1`)$2;"
-        }
-    },
-    { // debug snipet
         "key": "cmd+shift+d",
          "command": "editor.action.insertSnippet",
          "when": "editorTextFocus",
          "args": {
-           "snippet": "console.log(\"%cDEBUG => \",\"font-size:15px; color: #0015ff\",${TM_SELECTED_TEXT}$1)$2;"
+           "snippet": "console.log('%cLOG => ', 'font-size:15px; color: #0015ff', ${TM_SELECTED_TEXT}$1)$2"
          }
     },
-    // move word left/right
-    {
-        "key": "ctrl+shift+left",
-        "command": "editor.action.moveCarretLeftAction"
+    {   // log node
+        "key": "cmd+shift+m",
+         "command": "editor.action.insertSnippet",
+         "when": "editorTextFocus",
+         "args": {
+           "snippet": "console.log(${TM_SELECTED_TEXT}$1)$2;"
+         }
     },
-    {
-        "key": "ctrl+shift+right",
-        "command": "editor.action.moveCarretRightAction"
-    },
-    // delete line terminal
     {
         "key": "alt+delete",
         "command": "workbench.action.terminal.deleteWordRight",
@@ -67,19 +57,14 @@
         "command": "-workbench.action.terminal.focusNextPane",
         "when": "terminalFocus"
     },
-    // zoom editor vscode
-    {
-        "key": "1 up",
-        "command": "workbench.action.zoomIn"
-    },
+    //split editor
+    //wip.....
+   
     {
         "key": "shift+cmd+=",
         "command": "-workbench.action.zoomIn"
     },
-    {
-        "key": "1 down",
-        "command": "workbench.action.zoomOut"
-    },
+    
     {
         "key": "cmd+-",
         "command": "-workbench.action.zoomOut"
@@ -92,23 +77,47 @@
         "key": "ctrl+w",
         "command": "-editor.action.addSelectionToNextFindMatch"
     },
-     //turbo console log
+     
     {
-        "key": "alt+c",
-        "command": "turboConsoleLog.displayLogMessage"
-    },
-
-    {
-        "key": "alt+d",
-        "command": "turboConsoleLog.deleteAllLogMessages"
+        "key": "cmd+d",
+        "command": "workbench.action.splitEditorRight"
     },
     {
-        "key": "shift+alt+d",
-        "command": "-turboConsoleLog.deleteAllLogMessages"
+        "key": "cmd+s cmd+up",
+        "command": "workbench.action.moveEditorRightInGroup"
     },
     {
-        "key": "ctrl+alt+l",
-        "command": "-turboConsoleLog.displayLogMessage"
+        "key": "cmd+k shift+cmd+right",
+        "command": "-workbench.action.moveEditorRightInGroup"
     },
-    
+    {
+        "key": "cmd+backspace",
+        "command": "workbench.action.closeActiveEditor"
+    },
+    {
+        "key": "cmd+w",
+        "command": "-workbench.action.closeActiveEditor"
+    },
+    {
+        "key": "cmd+s",
+        "command": "workbench.action.files.saveAll"
+    },
+    {
+        "key": "alt+cmd+s",
+        "command": "-workbench.action.files.saveAll"
+    },
+    {
+        "key": "alt+f5",
+        "command": "-workbench.action.editor.nextChange",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "cmd+x",
+        "command": "-editor.action.webvieweditor.cut",
+        "when": "!editorFocus && !inputFocus && activeEditor == 'WebviewEditor'"
+    },
+    {
+        "key": "alt+f",
+        "command": "eslint.executeAutofix"
+    },
 ]
