@@ -1,6 +1,6 @@
 // Place your key bindings in this file to override the defaults,
 [   
-    {
+    {   // debu
         "key": "cmd+shift+d",
          "command": "editor.action.insertSnippet",
          "when": "editorTextFocus",
@@ -8,12 +8,20 @@
            "snippet": "console.log('%cLOG => ', 'font-size:15px; color: #0015ff', ${TM_SELECTED_TEXT}$1)$2"
          }
     },
-    {   // log node
+    {   // log
         "key": "cmd+shift+m",
          "command": "editor.action.insertSnippet",
          "when": "editorTextFocus",
          "args": {
            "snippet": "console.log(${TM_SELECTED_TEXT}$1)$2;"
+         }
+    },
+    {   // stylesheet
+        "key": "ctrl+s",
+         "command": "editor.action.insertSnippet",
+         "when": "editorTextFocus",
+         "args": {
+           "snippet": "const styles = StyleSheet.create({${TM_SELECTED_TEXT}$1});"
          }
     },
     {
@@ -33,33 +41,7 @@
         "command": "workbench.action.terminal.focusNextPane",
         "when": "terminalFocus"
     },
-    // move to line end and line start terminal
-    {
-        "key": "cmd+right",
-        "command": "workbench.action.terminal.moveToLineEnd",
-        "when": "terminalFocus"
-    },
-    {
-        "key": "cmd+left",
-        "command": "workbench.action.terminal.moveToLineStart",
-        "when": "terminalFocus"
-    },
-    {
-        "key": "shift+cmd+[Quote]",
-        "command": "workbench.action.terminal.focus"
-    },
-    {
-        "key": "shift+cmd+[BracketRight]",
-        "command": "workbench.action.terminal.kill"
-    },
-    {
-        "key": "alt+cmd+right",
-        "command": "-workbench.action.terminal.focusNextPane",
-        "when": "terminalFocus"
-    },
-    //split editor
     //wip.....
-   
     {
         "key": "shift+cmd+=",
         "command": "-workbench.action.zoomIn"
@@ -120,4 +102,5 @@
         "key": "alt+f",
         "command": "eslint.executeAutofix"
     },
+
 ]
