@@ -78,8 +78,13 @@
         "key": "cmd+k shift+cmd+right",
         "command": "-workbench.action.moveEditorRightInGroup"
     },
-    {
+     // new file / floder
+     {
         "key": "alt+f",
         "command": "explorer.newFile"
+    },
+    {
+        "key": "alt+d",
+        "command": "explorer.newFolder"
     }
 ]
