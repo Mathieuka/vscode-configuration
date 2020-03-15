@@ -1,49 +1,46 @@
 // Place your key bindings in this file to override the defaults,
-[   
+[
     // *** log **
-    {   
+    {
         "key": "cmd+shift+d",
-         "command": "editor.action.insertSnippet",
-         "when": "editorTextFocus",
-         "args": {
-           "snippet": "console.log('%cLOG => ', 'font-size:15px; color: #0015ff', ${TM_SELECTED_TEXT}$1)$2"
-         }
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus",
+        "args": {
+            "snippet": "console.log('%cLOG => ', 'font-size:15px; color: #32a879', ${TM_SELECTED_TEXT}$1)$2"
+        }
     },
-    {   
+    {
         "key": "cmd+shift+m",
-         "command": "editor.action.insertSnippet",
-         "when": "editorTextFocus",
-         "args": {
-           "snippet": "console.log(${TM_SELECTED_TEXT}$1)$2;"
-         }
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus",
+        "args": {
+            "snippet": "console.log(${TM_SELECTED_TEXT}$1)$2"
+        }
     },
     // *** terminal ***
-    {   // create new terminal
-        "key": "shift+cmd+[BracketLeft]",
+    {
+        "key": "cmd+[BracketLeft]",
         "command": "workbench.action.terminal.newInActiveWorkspace"
     },
-    {
-        // kill active terminal cmd + shift + *
-        "key": "shift+cmd+[BracketRight]",
-        "command": "workbench.action.terminal.kill"
-    },
-    {
-        // split terminal
-        "key": "shift+cmd+`",
-        "command": "workbench.action.terminal.split",
-        "when": "terminalFocus"
-    },
-    {   
-        // switch terminal cmd + shift + ^ 
-        "key": "shift+cmd+[Quote]",
+    {        
+        "key": "cmd+[Quote]",
         "command": "workbench.action.terminal.focusNextPane",
         "when": "terminalFocus"
     },
-    {
-        // delete right word cmd + backspace
+    {        
         "key": "alt+delete",
         "command": "workbench.action.terminal.deleteWordRight",
         "when": "terminalFocus"
+    },
+    {
+        "key": "cmd+`",
+        "command": "workbench.action.terminal.split",
+        "when": "terminalFocus"
+    },
+    
+    {
+        "key": "cmd+[BracketRight]",
+        "command": "workbench.action.terminal.kill"
     },
     // ***window***
     {
@@ -78,13 +75,39 @@
         "key": "cmd+k shift+cmd+right",
         "command": "-workbench.action.moveEditorRightInGroup"
     },
-     // new file / floder
-     {
+    // *** new file / directory ***
+    {
         "key": "alt+f",
         "command": "explorer.newFile"
     },
     {
         "key": "alt+d",
         "command": "explorer.newFolder"
-    }
+    },
+    {
+        "key": "cmd+[IntlBackslash]",
+        "command": "workbench.action.files.save"
+    },
+    
+    // *** move 5 line up/down  ***
+    // {
+    //     "key": "cmd+up",
+    //     "command": "cursorMove",
+    //     "args": {
+    //         "to": "up",
+    //         "by": "line",
+    //         "value": 5
+    //     },
+    //     "when": "editorTextFocus"
+    // },
+    // {
+    //     "key": "cmd+down",
+    //     "command": "cursorMove",
+    //     "args": {
+    //         "to": "down",
+    //         "by": "line",
+    //         "value": 5,
+    //     },
+    //     "when": "editorTextFocus"
+    // },
 ]

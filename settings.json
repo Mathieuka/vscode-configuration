@@ -1,0 +1,61 @@
+{
+    "gotoNextPreviousMember.symbolKinds": [],
+    "files.autoSave": "afterDelay",
+    "window.zoomLevel": -1,
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.fontSize": 15,
+    "editor.fontLigatures": true,
+    "editor.fontFamily": "Fira Code",
+    "terminal.integrated.fontSize": 18,
+    "terminal.integrated.fontWeight": "500",
+    "terminal.integrated.scrollback": 5000,
+    "terminal.integrated.fontFamily": "monospace",
+    "terminal.integrated.letterSpacing": 1,
+    "editor.tabCompletion": "on",
+    "editor.suggestSelection": "first",
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.tslint": true
+        },
+    "prettier.singleQuote": true,
+    "prettier.useTabs": true,
+    "prettier.bracketSpacing": true,
+    "taskExplorer.enableMake": true,
+    "taskExplorer.enableSideBar": true,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "typescript.updateImportsOnFileMove.enabled": "always",        
+    "cSpell.userWords": [
+        "gitignore"
+    ],
+    "workbench.colorTheme": "Material Theme",
+    "workbench.colorCustomizations": {
+        "activityBarBadge.background": "#C6FF00",
+        "activityBar.activeBorder": "#C6FF00",
+        "list.activeSelectionForeground": "#C6FF00",
+        "list.inactiveSelectionForeground": "#C6FF00",
+        "list.highlightForeground": "#C6FF00",
+        "scrollbarSlider.activeBackground": "#C6FF0050",
+        "editorSuggestWidget.highlightForeground": "#C6FF00",
+        "textLink.foreground": "#C6FF00",
+        "progressBar.background": "#C6FF00",
+        "pickerGroup.foreground": "#C6FF00",
+        "tab.activeBorder": "#C6FF00",
+        "notificationLink.foreground": "#C6FF00",
+        "editorWidget.resizeBorder": "#C6FF00",
+        "editorWidget.border": "#C6FF00",
+        "settings.modifiedItemIndicator": "#C6FF00",
+        "settings.headerForeground": "#C6FF00",
+        "panelTitle.activeBorder": "#C6FF00",
+        "breadcrumb.activeSelectionForeground": "#C6FF00",
+        "menu.selectionForeground": "#C6FF00",
+        "menubar.selectionForeground": "#C6FF00",
+        "editor.findMatchBorder": "#C6FF00",
+        "selection.background": "#C6FF0040"
+    },
+    "materialTheme.accent": "Acid Lime",
+    "material-icon-theme.folders.theme": "specific",
+    
+}
