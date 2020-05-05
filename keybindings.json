@@ -22,12 +22,12 @@
         "key": "cmd+[BracketLeft]",
         "command": "workbench.action.terminal.newInActiveWorkspace"
     },
-    {        
+    {
         "key": "cmd+[Quote]",
         "command": "workbench.action.terminal.focusNextPane",
         "when": "terminalFocus"
     },
-    {        
+    {
         "key": "alt+delete",
         "command": "workbench.action.terminal.deleteWordRight",
         "when": "terminalFocus"
@@ -37,7 +37,6 @@
         "command": "workbench.action.terminal.split",
         "when": "terminalFocus"
     },
-    
     {
         "key": "cmd+[BracketRight]",
         "command": "workbench.action.terminal.kill"
@@ -88,7 +87,24 @@
         "key": "cmd+[IntlBackslash]",
         "command": "workbench.action.files.save"
     },
-    
+    // React-Native
+    {
+        "key": "cmd+m",
+        "command": "workbench.action.terminal.sendSequence",
+        "args": {
+            "text": "adb shell input keyevent KEYCODE_MENU"
+        }
+    },
+    {
+        "key": "shift+cmd+u",
+        "command": "editor.action.rename",
+        "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "f2",
+        "command": "-editor.action.rename",
+        "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
+    }
     // *** move 5 line up/down  ***
     // {
     //     "key": "cmd+up",
